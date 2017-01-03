@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.panatlanticdev.preschool"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.panatlanticdev.preschool.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.panatlanticdev.preschool.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".UserInfo"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Inicio" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NuevoUsuario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Existente"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Seleccion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".VariosHijosNuevo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Perfil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ListadoEventos" >
+        </activity>
+        <activity android:name=".SingleItemView" >
+        </activity>
+        <activity android:name=".Avisos" >
+        </activity>
+        <activity android:name=".VistaAviso" >
+        </activity>
+        <activity android:name=".CalendarioSeccion" >
+        </activity>
+        <activity android:name=".Chat" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.panatlanticdev.preschool" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Ads" >
+        </activity>
+    </application>
+
+</manifest>

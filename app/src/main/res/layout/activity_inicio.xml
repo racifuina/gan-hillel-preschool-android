@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Inicio">
+
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/codigoAcessoText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Código de acceso"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Usuario"
+        android:id="@+id/nuevoUsuarioButton"
+        android:layout_below="@+id/codigoAcessoText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario Existente"
+        android:id="@+id/usuarioExistenteButton"
+        android:layout_below="@+id/nuevoUsuarioButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoImageView"
+        android:layout_below="@id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/codigoAcessoText"
+        android:src="@drawable/logo300px" />
+</RelativeLayout>

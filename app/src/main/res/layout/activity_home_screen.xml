@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.panatlanticdev.ganhillel.HomeScreen">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="avisos"
+        android:id="@+id/avisosButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#45A2DA" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensajes"
+        android:id="@+id/mensajesButton"
+        android:layout_above="@+id/avisosButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:backgroundTint="#45A2DA" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calendario de Sección"
+        android:id="@+id/calendarioSeccionButton"
+        android:layout_above="@+id/mensajesButton"
+        android:layout_alignRight="@+id/mensajesButton"
+        android:layout_alignEnd="@+id/mensajesButton"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:backgroundTint="#45A2DA" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actividades Generales"
+        android:id="@+id/actividadesButton"
+        android:elegantTextHeight="false"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_above="@+id/calendarioSeccionButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#45A2DA" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo300px"
+        android:layout_above="@+id/perfilButton"
+        android:layout_below="@+id/tool_bar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:id="@+id/perfilButton"
+        android:layout_above="@+id/actividadesButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#45A2DA" />
+
+
+</RelativeLayout>
+
+
+

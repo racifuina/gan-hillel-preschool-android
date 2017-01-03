@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.panatlanticdev.ganhillel.VistaAviso">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:background="#45A2DA"
+        android:layout_alignParentLeft="true"
+        android:padding="16dp"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:id="@+id/tituloAviso"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/namelabel"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/infoAviso"
+            android:background="@layout/borderblanco"
+            android:layout_below="@+id/tituloAviso"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

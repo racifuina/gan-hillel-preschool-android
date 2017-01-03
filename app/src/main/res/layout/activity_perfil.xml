@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.panatlanticdev.ganhillel.Perfil">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/tool_bar"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/tool_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Nombre padre:"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Papa"
+            android:textColor="#000000"
+            android:id="@+id/perfilNombrePapaLabel"
+            android:layout_above="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Código de identificación:"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="0000"
+            android:id="@+id/perfilCodigoLabel"
+
+            android:layout_alignRight="@+id/perfilNombrePapaLabel"
+            android:layout_alignEnd="@+id/perfilNombrePapaLabel"
+            android:layout_below="@+id/perfilNombrePapaLabel"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:textAlignment="textEnd" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/frameLayout2"></FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/frameLayout"
+            android:background="@layout/border"
+
+            android:layout_below="@+id/frameLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar Perfil"
+                android:id="@+id/primerPerfilButton"
+                android:layout_gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Hijo:"
+                android:id="@+id/textView6"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grado:"
+                android:id="@+id/textView7"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Primer Hijo"
+                android:id="@+id/primerHijoPerfilLabel"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Primer Seccion"
+                android:id="@+id/primerHijoSeccionLabel"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:id="@+id/cerrarSesionButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#fa3033" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/frameLayout3"
+            android:layout_below="@+id/frameLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/frameLayout4"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@layout/border"
+            android:layout_below="@+id/frameLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+
+                android:text="Usar Perfil"
+                android:id="@+id/segundoPerfilButton"
+                android:layout_gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Hijo:"
+                android:id="@+id/textView10"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grado:"
+                android:id="@+id/textView11"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Segundo Hijo"
+                android:id="@+id/segundoHijoPerfilLabel"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Segunda Seccion"
+                android:id="@+id/segundoHijoSeccionLabel"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/frameLayout5"
+            android:layout_below="@+id/frameLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/frameLayout6"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@layout/border"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/frameLayout5"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar Perfil"
+                android:id="@+id/tercerPerfilButton"
+                android:layout_gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Hijo:"
+                android:id="@+id/textView14"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grado:"
+                android:id="@+id/textView15"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Tercer Hijo"
+                android:id="@+id/tercerHijoPerfilLabel"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Tercer Sección"
+                android:id="@+id/tercerHijoSeccionLabel"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:id="@+id/frameLayout7"
+            android:layout_below="@+id/frameLayout6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/frameLayout8"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@layout/border"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/frameLayout7"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar Perfil"
+                android:id="@+id/cuartoPerfilButton"
+                android:layout_gravity="right|center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Hijo:"
+                android:id="@+id/textView18"
+                android:layout_gravity="left|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grado:"
+                android:id="@+id/textView19"
+                android:layout_gravity="left|bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Cuarto Hijo"
+                android:id="@+id/cuartoHijoPerfilLabel"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Cuarta Sección"
+                android:id="@+id/cuartoHijoSeccionLabel"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
